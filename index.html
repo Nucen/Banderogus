@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="icon/icon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="./img/gus-anim.gif" as="image">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="author" content="Nucen">
     <meta name="description" content="I'm Rostslav my nickname is Nucen. Is a page about my capabilities">
@@ -23,7 +24,7 @@
 
                     <p class="main-page-text-descr">Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!</p>
                     
-                    <button class="main-page-button">
+                    <button class="main-page-button" id="go-to-form-btn">
                         Запустити гуся
                     </button>
                 </div>
@@ -53,5 +54,22 @@
             </div>
         </div>
     </div>
+    <div class="form-page">
+        <form acrion="#" class="form" netlify id="form">
+            <img src="img/trezub.svg" alt="trezub">
+            <h4 class="form-title">Поділися, будь ласка, поштою</h4>
+            <p class="form-descr">та запиши гуся до бандерозагону</p>
+            <div class="form-field">
+                <label for="user-name" class="form-label">Ім'я</label>
+                <input type="text" class="form-input" id="user-name" name="Ім'я користувача">
+            </div>
+            <div class="form-field">
+                <label for="user-nemail" class="form-label">Email</label>
+                <input type="email" class="form-input" id="user-email" name="Email користувача">
+            </div>
+            <button class="form-button" id="launch-btn">Запустити гуся</button>
+        </form>
+    </div>
+    <script src="js/form.js"></script>
 </body>
 </html>
